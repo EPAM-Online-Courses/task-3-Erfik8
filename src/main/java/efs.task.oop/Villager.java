@@ -4,14 +4,12 @@ public class Villager implements Fighter{
     public String name;
     public int age;
     private int health;
-    private int damage;
 
     public Villager(String name, int age)
     {
         this.name = name;
         this.age = age;
         this.health = 100;
-        this.damage = (int)(100 - this.age * 0.5)/10;
     }
 
     public void sayHello()
@@ -26,7 +24,7 @@ public class Villager implements Fighter{
 
     public void attack(Fighter victim)
     {
-        victim.takeHit(this.getDamage());
+        victim.takeHit((int)(100 - this.age * 0.5)/10);
     }
     public void takeHit(int damage)
     {
