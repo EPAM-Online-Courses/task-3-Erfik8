@@ -53,7 +53,7 @@ public class Main {
           
           if(Monsters.monstersHealth <=0 )
           {
-            System.out.println("Obozowisko ocalone");
+            System.out.println("Obozowisko ocalone!");
             break;
           }
         }
